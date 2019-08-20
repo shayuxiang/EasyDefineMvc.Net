@@ -8303,7 +8303,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.3",
+    "version": "1.0.3.2",
     "restore": {
       "projectUniqueName": "E:\\主站\\框架\\EasyDefineMvc.Net.Core\\EasyDefine.Dapper\\EasyDefine.Dapper.csproj",
       "projectName": "EasyDefine.Dapper",
