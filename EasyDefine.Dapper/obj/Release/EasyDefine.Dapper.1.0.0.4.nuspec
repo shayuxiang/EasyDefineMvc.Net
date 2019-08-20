@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EasyDefine.Dapper</id>
+    <version>1.0.0.4</version>
+    <authors>yuxiang.Sha</authors>
+    <owners>yuxiang.Sha</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EasyDefine.Dapper: EasyDefine提供对Dapper访问底层MySQL数据仓储的抽象，提供标注组件可以快速地实现数据的查询和命令的执行，并且提供动态实体映射的支持，向上层服务提供支持。</description>
+    <releaseNotes>EasyDefine是一个使用动态编译技术实现的简单定义MVC三层架构的框架。用户使用标注即可生成DAL、BAL等业务，而无需进行重复冗余的编码。</releaseNotes>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="EasyDefine.Configuration" version="1.0.0.4" exclude="Build,Analyzers" />
+        <dependency id="Dapper" version="1.50.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CodeAnalysis" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="MySql.Data" version="8.0.14" exclude="Build,Analyzers" />
+        <dependency id="System.CodeDom" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\主站\框架\EasyDefine\EasyDefine.Dapper\bin\Release\netcoreapp2.1\EasyDefine.Dapper.dll" target="lib\netcoreapp2.1\EasyDefine.Dapper.dll" />
+  </files>
+</package>

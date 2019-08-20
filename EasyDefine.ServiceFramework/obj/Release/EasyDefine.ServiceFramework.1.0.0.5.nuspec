@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EasyDefine.ServiceFramework</id>
+    <version>1.0.0.5</version>
+    <authors>yuxiang.Sha</authors>
+    <owners>yuxiang.Sha</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EasyDefine.ServiceFramework:封装EasyDefine服务层的逻辑，其提供的标注组件可以快速地帮助业务层定义逻辑，帮助业务层动态地编译其具体实现类。使得开发人员更加专注于业务交互。</description>
+    <releaseNotes>EasyDefine是一个使用动态编译技术实现的简单定义MVC三层架构的框架。用户使用标注即可生成DAL、BAL等业务，而无需进行重复冗余的编码。</releaseNotes>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="EasyDefine.Configuration" version="1.0.0.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CodeAnalysis" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CodeAnalysis.CSharp" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="System.CodeDom" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\主站\框架\EasyDefine\EasyDefine.ServiceFramework\bin\Release\netcoreapp2.1\EasyDefine.ServiceFramework.dll" target="lib\netcoreapp2.1\EasyDefine.ServiceFramework.dll" />
+  </files>
+</package>

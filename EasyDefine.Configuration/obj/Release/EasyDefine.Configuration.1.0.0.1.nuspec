@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EasyDefine.Configuration</id>
+    <version>1.0.0.1</version>
+    <authors>yuxiang.Sha</authors>
+    <owners>yuxiang.Sha</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EasyDefine.Configuration: 是EasyDefine抽象MVC业务层和数据访问层之间进行交互的共有抽象。向View层逻辑提供相应的入口。</description>
+    <releaseNotes>EasyDefine是一个使用动态编译技术实现的简单定义MVC三层架构的框架。用户使用标注即可生成DAL、BAL等业务，而无需进行重复冗余的编码。</releaseNotes>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="2.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options.ConfigurationExtensions" version="2.1.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\主站\框架\EasyDefine\EasyDefine.Configuration\bin\Release\netcoreapp2.1\EasyDefine.Configuration.dll" target="lib\netcoreapp2.1\EasyDefine.Configuration.dll" />
+  </files>
+</package>

@@ -1,0 +1,9 @@
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\bin\Debug\netcoreapp2.0\EasyDefine.Configuration.deps.json
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\bin\Debug\netcoreapp2.0\EasyDefine.Configuration.dll
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\bin\Debug\netcoreapp2.0\EasyDefine.Configuration.pdb
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\obj\Debug\netcoreapp2.0\EasyDefine.Configuration.csprojAssemblyReference.cache
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\obj\Debug\netcoreapp2.0\EasyDefine.Configuration.csproj.CoreCompileInputs.cache
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\obj\Debug\netcoreapp2.0\EasyDefine.Configuration.AssemblyInfoInputs.cache
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\obj\Debug\netcoreapp2.0\EasyDefine.Configuration.AssemblyInfo.cs
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\obj\Debug\netcoreapp2.0\EasyDefine.Configuration.dll
+E:\主站\手机站\PPM.VerticalSite.Wap\EasyDefine.Configuration\obj\Debug\netcoreapp2.0\EasyDefine.Configuration.pdb

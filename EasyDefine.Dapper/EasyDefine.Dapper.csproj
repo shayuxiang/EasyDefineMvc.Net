@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackageReleaseNotes>EasyDefine是一个使用动态编译技术实现的简单定义MVC三层架构的框架。用户使用标注即可生成DAL、BAL等业务，而无需进行重复冗余的编码。</PackageReleaseNotes>
+    <Version>1.0.2.2</Version>
+    <Authors>yuxiang.Sha</Authors>
+    <Description>EasyDefine.Dapper: EasyDefine提供对Dapper访问底层MySQL数据仓储的抽象，提供标注组件可以快速地实现数据的查询和命令的执行，并且提供动态实体映射的支持，向上层服务提供支持。</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.10.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.14" />
+    <PackageReference Include="System.CodeDom" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyDefine.Configuration\EasyDefine.Configuration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

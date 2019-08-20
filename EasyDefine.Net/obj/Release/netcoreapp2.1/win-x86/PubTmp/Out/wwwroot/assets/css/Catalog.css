@@ -1,0 +1,29 @@
+﻿.Catalog {
+    width: 240px;
+    height: 850px;
+    position: fixed;
+    border: 1px solid #eee;
+    left: 3px;
+    top: 99px;
+    z-index: 999;
+    border-radius: 10px;
+    background: #efefef;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+.Catalog a {
+        text-decoration: none;
+        cursor: pointer;
+}
+
+.CatalogLink {
+    font-size: 12px;
+    color: #4ca0d4;
+    margin-left: 24px;
+}
+
+.debug {
+    width: 950px;
+    height: 580px;
+}
