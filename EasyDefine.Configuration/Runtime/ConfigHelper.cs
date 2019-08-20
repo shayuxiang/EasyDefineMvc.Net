@@ -107,6 +107,11 @@ namespace EasyDefine.Configuration.Runtime
             return dir;
         }
 
+        public string GetTempSourceDir()
+        {
+            return GetTempSourceDir(true);
+        }
+
         /// <summary>
         /// 获取编译输出的服务层动态库路径
         /// </summary>

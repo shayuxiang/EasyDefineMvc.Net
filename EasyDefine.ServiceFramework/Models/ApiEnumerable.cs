@@ -32,14 +32,16 @@ namespace EasyDefine.ServiceFramework.Models
         public string ToVue(string RouteName,string Host,bool IsAuth) {
             //定义枚举
             var func = $@"/** @description 全局对象:服务器地址 */var Host = '{Host}';";
+            var xb = string.IsNullOrEmpty(RouteName) ? "" : "_";
+            var xx = string.IsNullOrEmpty(RouteName) ? "" : "/";
             foreach (var model in EnumModels)
             {
-                var enumjs = $@"/** @description 枚举[{model.Description}]  */ var Enum_{RouteName}_{model.ClassName} = new Object();";
+                var enumjs = $@"/** @description 枚举[{model.Description}]  */ var Enum{xb}{RouteName}_{model.ClassName} = new Object();";
                 var func_body = "";
                 foreach (var param in model.Parameters)
                 {
                     var defaultValue = Convert.ToInt32(param.DefaultValue);
-                    func_body += $@"/** @description {param.Description}    @example var x {{=}} Enum_{RouteName}_{model.ClassName}.{param.Name};   */ Enum_{RouteName}_{model.ClassName}.{param.Name} = {defaultValue}; ";
+                    func_body += $@"/** @description {param.Description}    @example var x {{=}} Enum{xb}{RouteName}_{model.ClassName}.{param.Name};   */ Enum_{RouteName}_{model.ClassName}.{param.Name} = {defaultValue}; ";
                 }
                 enumjs = enumjs + func_body;
                 //所有的初始化
@@ -49,14 +51,14 @@ namespace EasyDefine.ServiceFramework.Models
             foreach (var model in EntityModels)
             {
                 //原型方式创建js对象
-                var entityjs = $@"/** @description 实体对象[{model.Description}]  */ function Model_{RouteName}_{model.ClassName}(){{}}";
+                var entityjs = $@"/** @description 实体对象[{model.Description}]  */ function Model{xb}{RouteName}_{model.ClassName}(){{}}";
                 var func_body = "";
                 foreach (var param in model.Parameters) {
                     var defaultValue = "null";
                     //自定义类型
                     if (!param.FieldType.IsPrimitive && !param.FieldType.Assembly.FullName.Contains("System") && !param.FieldType.FullName.Contains("Microsoft"))
                     {
-                        defaultValue = $@"new Model_{RouteName}_{param.FieldType.Name}()";
+                        defaultValue = $@"new Model{xb}{RouteName}_{param.FieldType.Name}()";
                     }
                     //系统类型
                     else if (param.FieldType.GUID == typeof(int).GUID || param.FieldType.GUID == typeof(long).GUID || param.FieldType.GUID == typeof(float).GUID || param.FieldType.GUID == typeof(decimal).GUID || param.FieldType.GUID == typeof(uint).GUID)
@@ -75,7 +77,7 @@ namespace EasyDefine.ServiceFramework.Models
                     {
                         defaultValue = "new Date()";
                     }
-                    func_body += $@"/** @description {param.Description}    @example var x {{=}} Model_{RouteName}_{model.ClassName}.{param.Name}; */ Model_{RouteName}_{model.ClassName}.prototype.{param.Name} = {defaultValue};";
+                    func_body += $@"/** @description {param.Description}    @example var x {{=}} Model{xb}{RouteName}_{model.ClassName}.{param.Name}; */ Model_{RouteName}_{model.ClassName}.prototype.{param.Name} = {defaultValue};";
                 }
                 entityjs += entityjs + func_body;
                 func += entityjs;
@@ -86,13 +88,13 @@ namespace EasyDefine.ServiceFramework.Models
             foreach (var coll in query) {
                 List<ApiModel> api = coll.ToList<ApiModel>();
                 //原型方式创建js-api对象
-                var apijs = $@"function API_{RouteName}_{api.First().ControllerName}(){{}};";
+                var apijs = $@"function API{xb}{RouteName}_{api.First().ControllerName}(){{}};";
                 var func_body = "";
                 foreach (var method in api) {
                     var _params = "";
                     var func_content = "";
                     var data = "";
-                    var url = $@"Host+'{RouteName}/{method.ControllerName}/{method.ActionName}'";
+                    var url = $@"Host+'/{RouteName}{xx}{method.ControllerName}/{method.ActionName}'";
                     //参数整理
                     foreach (var p in method.ParamTypes) {
                         _params += $@"{p.Name},";
@@ -172,7 +174,7 @@ namespace EasyDefine.ServiceFramework.Models
                     {
                         _params = _params.Substring(0, _params.Length - 1);
                     }
-                    func_body += $@"API_{RouteName}_{api.First().ControllerName}.prototype.{method.ActionName} = function({_params}){{{func_content}}};";
+                    func_body += $@"API{xb}{RouteName}_{api.First().ControllerName}.prototype.{method.ActionName} = function({_params}){{{func_content}}};";
                 }
                 //添加到代码返回
                 apijs = apijs + func_body;
@@ -189,9 +191,11 @@ namespace EasyDefine.ServiceFramework.Models
         public string ToDoc(string RouteName, string Host) {
             //定义枚举
             var func = $@"";
+            var xb = string.IsNullOrEmpty(RouteName) ? "" : "_";
+            var xx = string.IsNullOrEmpty(RouteName) ? "" : "/";
             foreach (var model in EnumModels)
             {
-                var enumjs = $@"<span class='EnumName'>Enum_{RouteName}_{model.ClassName}(枚举)</span><span class='EnumDetail'>.Net Core描述:[{model.Description}]</span>";
+                var enumjs = $@"<span class='EnumName'>Enum{xb}{RouteName}_{model.ClassName}(枚举)</span><span class='EnumDetail'>.Net Core描述:[{model.Description}]</span>";
                 var func_body = "";
                 foreach (var param in model.Parameters)
                 {
@@ -202,12 +206,13 @@ namespace EasyDefine.ServiceFramework.Models
                 //所有的初始化
                 func += $@"<li>{enumjs}</li>";
             }
-            func = $@"<p class='title_p'>服务域:[{RouteName}]</p><ul class='enum_ul'>{func}</ul>";
+            var fwy = string.IsNullOrEmpty(RouteName) ? "未设置" : RouteName;
+            func = $@"<p class='title_p'>服务域:[{fwy}]</p><ul class='enum_ul'>{func}</ul>";
             //定义对象
             foreach (var model in EntityModels)
             {
                 //原型方式创建js对象
-                var entityjs = $@"<span  class='ModelName'>Model_{RouteName}_{model.ClassName}(实体对象)</span><span  class='ModelDetail'>.Net Core描述:[{model.Description}]</span>";
+                var entityjs = $@"<span  class='ModelName'>Model{xb}{RouteName}_{model.ClassName}(实体对象)</span><span  class='ModelDetail'>.Net Core描述:[{model.Description}]</span>";
                 var func_body = "";
                 foreach (var param in model.Parameters)
                 {
@@ -234,7 +239,7 @@ namespace EasyDefine.ServiceFramework.Models
                     {
                         defaultValue = "时间日期";
                     }
-                    func_body += $@"<ul class='ModelParam'><li>参数名称: {param.Name} </li> <li> {param.Description}</li> <li>示例： var x = new Model_{RouteName}_{model.ClassName}; console.log(x.{param.Name});</li> <li>传入类型:{defaultValue}</li></ul> ";
+                    func_body += $@"<ul class='ModelParam'><li>参数名称: {param.Name} </li> <li> {param.Description}</li> <li>示例： var x = new Model{xb}{RouteName}_{model.ClassName}; console.log(x.{param.Name});</li> <li>传入类型:{defaultValue}</li></ul> ";
                 }
                 entityjs = entityjs + func_body;
                 func += $@"<ul  class='entity_ul'>{entityjs}</ul>";
@@ -247,15 +252,15 @@ namespace EasyDefine.ServiceFramework.Models
 
                 List<ApiModel> api = coll.ToList<ApiModel>();
                 //原型方式创建js-api对象
-                var apijs = $@"<span class='apiName'>API_{RouteName}_{api.First().ControllerName}(API对象)</span>";
+                var apijs = $@"<span class='apiName'>API{xb}{RouteName}_{api.First().ControllerName}(API对象)</span>";
                 //apijs += $@"<span class='apiDetail'>.Net Core描述:[{api.First().Description}]</span>";
                 var func_body = "";
                 foreach (var method in api)
                 {
                     var _params = "";
                     var data = "";
-                    var url = $@"{{Host}}/{RouteName}/{method.ControllerName}/{method.ActionName}";
-                    var link = $@"{Host}/{RouteName}/{method.ControllerName}/{method.ActionName}";
+                    var url = $@"{{Host}}/{RouteName}{xx}{method.ControllerName}/{method.ActionName}";
+                    var link = $@"{Host}/{RouteName}{xx}{method.ControllerName}/{method.ActionName}";
                     //参数整理
                     foreach (var p in method.ParamTypes)
                     {

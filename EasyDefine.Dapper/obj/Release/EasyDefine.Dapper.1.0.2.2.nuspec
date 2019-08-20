@@ -10,7 +10,7 @@
     <releaseNotes>EasyDefine是一个使用动态编译技术实现的简单定义MVC三层架构的框架。用户使用标注即可生成DAL、BAL等业务，而无需进行重复冗余的编码。</releaseNotes>
     <dependencies>
       <group targetFramework=".NETCoreApp2.1">
-        <dependency id="EasyDefine.Configuration" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="EasyDefine.Configuration" version="1.0.3" exclude="Build,Analyzers" />
         <dependency id="Dapper" version="1.50.5" exclude="Build,Analyzers" />
         <dependency id="Microsoft.CodeAnalysis" version="2.10.0" exclude="Build,Analyzers" />
         <dependency id="MySql.Data" version="8.0.14" exclude="Build,Analyzers" />
@@ -19,6 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="E:\主站\框架\EasyDefine\EasyDefine.Dapper\bin\Release\netcoreapp2.1\EasyDefine.Dapper.dll" target="lib\netcoreapp2.1\EasyDefine.Dapper.dll" />
+    <file src="E:\主站\框架\EasyDefineMvc.Net\EasyDefine.Dapper\bin\Release\netcoreapp2.1\EasyDefine.Dapper.dll" target="lib\netcoreapp2.1\EasyDefine.Dapper.dll" />
   </files>
 </package>

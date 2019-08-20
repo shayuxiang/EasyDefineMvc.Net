@@ -6,10 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "EasyDefine.ServiceFramework/1.0.2.5": {
+      "EasyDefine.ServiceFramework/1.0.3.3": {
         "dependencies": {
           "EPPlus.Core": "1.5.4",
-          "EasyDefine.Configuration": "1.0.3",
+          "EasyDefine.Configuration": "1.0.3.1",
           "Microsoft.CodeAnalysis": "2.10.0",
           "Microsoft.CodeAnalysis.CSharp": "2.10.0",
           "System.CodeDom": "4.5.0",
@@ -1972,7 +1972,7 @@
           }
         }
       },
-      "EasyDefine.Configuration/1.0.3": {
+      "EasyDefine.Configuration/1.0.3.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "2.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
@@ -2011,7 +2011,7 @@
     }
   },
   "libraries": {
-    "EasyDefine.ServiceFramework/1.0.2.5": {
+    "EasyDefine.ServiceFramework/1.0.3.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3003,7 +3003,7 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
-    "EasyDefine.Configuration/1.0.3": {
+    "EasyDefine.Configuration/1.0.3.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

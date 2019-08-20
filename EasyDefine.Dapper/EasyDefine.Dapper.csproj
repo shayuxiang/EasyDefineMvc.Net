@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackageReleaseNotes>EasyDefine是一个使用动态编译技术实现的简单定义MVC三层架构的框架。用户使用标注即可生成DAL、BAL等业务，而无需进行重复冗余的编码。</PackageReleaseNotes>
-    <Version>1.0.2.2</Version>
+    <Version>1.0.3</Version>
     <Authors>yuxiang.Sha</Authors>
     <Description>EasyDefine.Dapper: EasyDefine提供对Dapper访问底层MySQL数据仓储的抽象，提供标注组件可以快速地实现数据的查询和命令的执行，并且提供动态实体映射的支持，向上层服务提供支持。</Description>
   </PropertyGroup>

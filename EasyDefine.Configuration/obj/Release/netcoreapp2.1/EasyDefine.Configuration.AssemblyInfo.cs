@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("yuxiang.Sha")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("EasyDefine.Configuration: 是EasyDefine抽象MVC业务层和数据访问层之间进行交互的共有抽象。向View层逻辑提供相应的入口。")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3.1")]
 [assembly: System.Reflection.AssemblyProductAttribute("EasyDefine.Configuration")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EasyDefine.Configuration")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.1")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

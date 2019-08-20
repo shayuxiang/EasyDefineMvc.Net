@@ -15,11 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("EasyDefine.Dapper: EasyDefine提供对Dapper访问底层MySQL数据仓储的抽象，提供标注组件可以快速地实现数据的查询和命令的执行，并" +
     "且提供动态实体映射的支持，向上层服务提供支持。")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.2")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2.2")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3")]
 [assembly: System.Reflection.AssemblyProductAttribute("EasyDefine.Dapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EasyDefine.Dapper")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.2")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

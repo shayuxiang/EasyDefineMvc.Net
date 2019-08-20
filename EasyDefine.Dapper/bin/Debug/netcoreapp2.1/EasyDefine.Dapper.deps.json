@@ -6,10 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "EasyDefine.Dapper/1.0.2.2": {
+      "EasyDefine.Dapper/1.0.3": {
         "dependencies": {
           "Dapper": "1.50.5",
-          "EasyDefine.Configuration": "1.0.3",
+          "EasyDefine.Configuration": "1.0.3.1",
           "Microsoft.CodeAnalysis": "2.10.0",
           "MySql.Data": "8.0.14",
           "System.CodeDom": "4.5.0"
@@ -1918,7 +1918,7 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
-      "EasyDefine.Configuration/1.0.3": {
+      "EasyDefine.Configuration/1.0.3.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "2.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
@@ -1949,7 +1949,7 @@
     }
   },
   "libraries": {
-    "EasyDefine.Dapper/1.0.2.2": {
+    "EasyDefine.Dapper/1.0.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2934,7 +2934,7 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
-    "EasyDefine.Configuration/1.0.3": {
+    "EasyDefine.Configuration/1.0.3.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
