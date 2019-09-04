@@ -23,6 +23,9 @@ E:\主站\框架\EasyDefine\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Ne
 E:\主站\框架\EasyDefine\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.dll
 E:\主站\框架\EasyDefine\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.pdb
 E:\主站\框架\EasyDefine\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.csproj.CopyComplete
+E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\bin\Debug\netcoreapp2.1\wwwroot\download\EdLayuiBuilder.rar
+E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\bin\Debug\netcoreapp2.1\appsettings.json
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\bin\Debug\netcoreapp2.1\EasyDefine.Net.deps.json
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\bin\Debug\netcoreapp2.1\EasyDefine.Net.runtimeconfig.json
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\bin\Debug\netcoreapp2.1\EasyDefine.Net.runtimeconfig.dev.json
@@ -39,6 +42,7 @@ E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\E
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.TagHelpers.input.cache
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.TagHelpers.output.cache
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.RazorCoreGenerate.cache
+E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\Razor\Views\Home\Document.g.cshtml.cs
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\Razor\Views\Home\Fast.g.cshtml.cs
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
@@ -48,5 +52,3 @@ E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\E
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.dll
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.pdb
 E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\EasyDefine.Net.csproj.CopyComplete
-E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-E:\主站\框架\EasyDefineMvc.Net.Core\EasyDefine.Net\bin\Debug\netcoreapp2.1\wwwroot\download\EdLayuiBuilder.rar

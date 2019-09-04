@@ -48,12 +48,12 @@ namespace AspNetCore
             WriteLiteral("<!DOCTYPE HTML>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 202, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f94fc302ad6c4912afdf8f502d7b479d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e96ae44ea0f4765bfa47d59cfe95aaa", async() => {
                 BeginContext(31, 133, true);
                 WriteLiteral("\r\n    <title></title>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\r\n    ");
                 EndContext();
                 BeginContext(164, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "151081bc7eec442084f0e03c394b6cc4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "179641e4d32c4595af9a71fcc140c8bc", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -87,12 +87,12 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(229, 1419, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d3add98ce9be45a391d4c973449329d2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be69895d93364fb5a0dd8285421c3346", async() => {
                 BeginContext(251, 203, true);
                 WriteLiteral("\r\n\r\n    <!-- Header -->\r\n    <header id=\"header\">\r\n        <div class=\"inner\">\r\n            <a class=\"logo\"><strong>EasyDefine Mvc</strong> for .Net Core</a>\r\n            <nav id=\"nav\">\r\n                ");
                 EndContext();
                 BeginContext(454, 19, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08b3d97fe9ea47d3b9a7eaef65b9572e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1cd1e8f77bc45578dd38cb2243ebe06", async() => {
                     BeginContext(467, 2, true);
                     WriteLiteral("首页");
                     EndContext();

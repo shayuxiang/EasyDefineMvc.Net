@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyDefine.ServiceFramework
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyDefine.Oauth20", "EasyDefine.Oauth20\EasyDefine.Oauth20.csproj", "{33D159D8-CBBB-49D4-A841-DA16410C11FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDefine.Mongo", "EasyDefine.Mongo\EasyDefine.Mongo.csproj", "{0A26C30E-8E69-4D2B-B420-04CB13334AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDefine.DllTest", "EasyDefine.DllTest\EasyDefine.DllTest.csproj", "{90E017CB-C17A-4FA1-AD74-1922FB5558D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{33D159D8-CBBB-49D4-A841-DA16410C11FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33D159D8-CBBB-49D4-A841-DA16410C11FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33D159D8-CBBB-49D4-A841-DA16410C11FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A26C30E-8E69-4D2B-B420-04CB13334AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A26C30E-8E69-4D2B-B420-04CB13334AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A26C30E-8E69-4D2B-B420-04CB13334AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A26C30E-8E69-4D2B-B420-04CB13334AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E017CB-C17A-4FA1-AD74-1922FB5558D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E017CB-C17A-4FA1-AD74-1922FB5558D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E017CB-C17A-4FA1-AD74-1922FB5558D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E017CB-C17A-4FA1-AD74-1922FB5558D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

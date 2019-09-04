@@ -10,6 +10,10 @@ namespace EasyDefine.Configuration.Runtime
 
         public List<string> SlaveDb { get; set; }
 
+        public string MongoMasterDb { get; set; }
+
+        public List<string> MongoSlaveDb { get; set; }
+
         public string SOASolution { get; set; }
 
         public string DALSolution { get; set; }

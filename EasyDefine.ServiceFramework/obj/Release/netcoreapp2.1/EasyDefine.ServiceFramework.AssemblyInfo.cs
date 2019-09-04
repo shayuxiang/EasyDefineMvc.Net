@@ -15,11 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("EasyDefine.ServiceFramework:封装EasyDefine服务层的逻辑，其提供的标注组件可以快速地帮助业务层定义逻辑，帮助业务层动态地编译其" +
     "具体实现类。使得开发人员更加专注于业务交互。")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3.3")]
 [assembly: System.Reflection.AssemblyProductAttribute("EasyDefine.ServiceFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EasyDefine.ServiceFramework")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.3")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

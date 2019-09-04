@@ -72,6 +72,34 @@ namespace EasyDefine.Configuration.Runtime
         }
 
         /// <summary>
+        /// MongoDB 主库
+        /// </summary>
+        public static string MongoMasterConnectionString
+        {
+            get
+            {
+                {
+                    var config = new JsonConfigurationHelper();
+                    var setting = config.GetAppSettings<EasyDefineSetting>("EasyDefineSetting");
+                    if (setting == null) return string.Empty;
+                    return _masterstring = setting.MongoMasterDb;
+                }
+            }
+        }
+
+        /// <summary>
+        /// MongoDB 从库
+        /// </summary>
+        public static List<string> MongoSlaveConnectionString
+        {
+            get
+            {
+                var config = new JsonConfigurationHelper();
+                var setting = config.GetAppSettings<EasyDefineSetting>("EasyDefineSetting");
+                return _slavestring = setting.MongoSlaveDb;
+            }
+        }
+        /// <summary>
         /// 获取关联文件绝对路径
         /// </summary>
         /// <param name="Name"></param>

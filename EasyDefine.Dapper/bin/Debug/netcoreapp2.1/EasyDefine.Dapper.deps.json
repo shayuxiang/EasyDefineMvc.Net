@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "EasyDefine.Dapper/1.0.3": {
+      "EasyDefine.Dapper/1.0.3.2": {
         "dependencies": {
           "Dapper": "1.50.5",
           "EasyDefine.Configuration": "1.0.3.1",
@@ -1949,7 +1949,7 @@
     }
   },
   "libraries": {
-    "EasyDefine.Dapper/1.0.3": {
+    "EasyDefine.Dapper/1.0.3.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

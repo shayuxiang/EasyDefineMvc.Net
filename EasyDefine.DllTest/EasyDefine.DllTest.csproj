@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyDefine.Configuration\EasyDefine.Configuration.csproj" />
+    <ProjectReference Include="..\EasyDefine.Dapper\EasyDefine.Dapper.csproj" />
+    <ProjectReference Include="..\EasyDefine.Mongo\EasyDefine.Mongo.csproj" />
+    <ProjectReference Include="..\EasyDefine.ServiceFramework\EasyDefine.ServiceFramework.csproj" />
+  </ItemGroup>
+
+</Project>
